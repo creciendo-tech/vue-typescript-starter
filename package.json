@@ -1,0 +1,58 @@
+{
+    "name": "vue-starter",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "author": {
+        "email": "creciendotech@gmail.com",
+        "name": "Carlos Marchena",
+        "url": "https://www.linkedin.com/in/cmarchena/"
+    },
+    "scripts": {
+        "prepare": "husky install",
+        "dev": "vite",
+        "test": "vitest run",
+        "test:w": "vitest",
+        "test:c": "vitest run --coverage",
+        "lint": "eslint . --fix",
+        "build": "vue-tsc && vite build",
+        "preview": "vite preview",
+        "cypress": "cypress run",
+        "e2e": "concurrently \"yarn dev\" \"yarn cypress\""
+    },
+    "dependencies": {
+        "@rollup/rollup-linux-x64-gnu": "^4.8.0",
+        "@vue/test-utils": "^2.4.3",
+        "concurrently": "^8.2.2",
+        "husky": "^8.0.3",
+        "sass": "^1.69.5",
+        "vue": "^3.3.8",
+        "vue-router": "^4.2.5",
+        "vuex": "next"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^18.4.3",
+        "@commitlint/config-conventional": "^18.4.3",
+        "@types/jest": "^29.5.11",
+        "@typescript-eslint/eslint-plugin": "latest",
+        "@typescript-eslint/parser": "latest",
+        "@vitejs/plugin-vue": "^4.5.0",
+        "@vitest/coverage-v8": "^1.0.4",
+        "@vue/cli-plugin-router": "~5.0.0",
+        "cypress": "^13.6.1",
+        "eslint": "^8.55.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-config-standard-with-typescript": "latest",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+        "eslint-plugin-promise": "^6.0.0",
+        "eslint-plugin-vue": "latest",
+        "jest": "^29.7.0",
+        "jsdom": "^23.0.1",
+        "lint-staged": "^15.2.0",
+        "typescript": "*",
+        "vite": "^5.0.0",
+        "vitest": "^1.0.4",
+        "vue-tsc": "^1.8.22"
+    }
+}
